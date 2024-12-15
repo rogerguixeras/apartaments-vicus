@@ -1,0 +1,80 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    letter-spacing: 0.25px;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 25px 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+header nav ul li a.active, 
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.separator {
+    border: none;
+    height: 1px;
+    background-color: #333;
+    margin: 10px auto;
+    width: 125px;
+}
+
+/* Main grid layout */
+main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    padding: 20px;
+    gap: 20px;
+}
+
+.make-reservation,
+.contact {
+    font-size: 1.25em;
+    padding: 20px 50px 25px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.make-reservation h2,
+.contact h2 {
+    margin-bottom: 10px;
+}
+
+.make-reservation p {
+    text-align: left;
+}
